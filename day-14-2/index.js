@@ -164,7 +164,7 @@ const getProcessedMap = (map, cycles) => {
 
             const splitRegex = new RegExp(`.{1,${lineLength}}`, 'g');
 
-            return (resultHash.match(splitRegex) || []).map((l) => l.split(''))
+            return (resultHash.match(splitRegex) || []).map((l) => l.split(''));
         }
 
     }

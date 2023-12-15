@@ -35,8 +35,6 @@ const setupBoxes = () => {
             delete boxes[boxNumber][label];
             delete table[label];
         }
-
-
     });
 
     return { boxes, table };
@@ -46,7 +44,6 @@ const getTotalFocusingPower = () => {
     const { boxes, table } = setupBoxes();
 
     const labels = Object.keys(table);
-
 
     return labels.reduce((acc, label) => {
         const boxNumber = table[label];
